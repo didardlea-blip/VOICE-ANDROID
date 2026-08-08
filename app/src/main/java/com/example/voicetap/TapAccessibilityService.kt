@@ -28,7 +28,8 @@ class TapAccessibilityService : AccessibilityService() {
     /** Dispatches a tap gesture at the given screen coordinates. */
     fun performTapAt(x: Float, y: Float) {
         val path = Path().apply { moveTo(x, y) }
-        val stroke = GestureDescription.StrokeDescription(path, 0, 100)
+        // Longer press duration (300ms) — some games ignore very short synthetic taps
+        val stroke = GestureDescription.StrokeDescription(path, 0, 300)
         val gesture = GestureDescription.Builder().addStroke(stroke).build()
         dispatchGesture(gesture, null, null)
     }
