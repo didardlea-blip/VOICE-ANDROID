@@ -9,7 +9,7 @@ workflows:
     scripts:
       - name: Build debug APK
         script: |
-          cd $CM_BUILD_DIR/VoiceTap
+          cd $CM_BUILD_DIR
           gradle assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
