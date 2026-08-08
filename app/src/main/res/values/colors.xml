@@ -1,0 +1,5 @@
+<resources>
+    <color name="marker_color">#E53935</color>
+    <color name="background">#121212</color>
+    <color name="text_primary">#FFFFFF</color>
+</resources>
