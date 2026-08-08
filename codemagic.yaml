@@ -10,7 +10,7 @@ workflows:
       - name: Build debug APK
         script: |
           cd $CM_BUILD_DIR
-          ./gradlew assembleDebug
+          gradle assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
     publishing:
