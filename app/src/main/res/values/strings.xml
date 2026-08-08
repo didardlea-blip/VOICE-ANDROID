@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VoiceTap</string>
+    <string name="accessibility_service_description">Allows VoiceTap to tap the screen at a saved position when you say your trigger word.</string>
+</resources>
